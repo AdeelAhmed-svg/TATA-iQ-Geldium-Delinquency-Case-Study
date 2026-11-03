@@ -1,0 +1,11 @@
+# Forage / Tata iQ materials are restricted - never commit them
+*.xlsx
+*.xls
+*.csv
+*.pdf
+*.docx
+*.pptx
+data/
+materials/
+.ipynb_checkpoints/
+__pycache__/
