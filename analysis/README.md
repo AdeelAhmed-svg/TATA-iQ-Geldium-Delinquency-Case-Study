@@ -65,8 +65,7 @@ Geldium Finance wanted to reduce credit card delinquency. The simulated brief as
 Python (pandas, scikit-learn, scipy, matplotlib) · median imputation · logistic regression · decision tree · stratified cross-validation · Wilson confidence intervals · chi-square and Fisher tests · disparate-impact (four-fifths rule) checks.
 
 ## 7. How I used AI
-[CONFIRM AND EDIT THIS SECTION. Keep it exactly true.]
-I used Claude to explain concepts, draft the analysis code and draft the written deliverables. [Describe what *you* did: e.g. reviewed every number against the output, changed X, decided Y.] I did not use AI to generate or fill in data values. Details in [`docs/ai-use-and-authorship.md`](docs/ai-use-and-authorship.md).
+I used Claude to explain concepts, help draft Python analysis code, and produce initial drafts of the written deliverables. I reviewed all outputs against the dataset and analysis results before using them. I verified the reported statistics, checked the logic behind the missing data assessment, model evaluation, and fairness considerations, and corrected or rewrote sections where necessary. I made the final decisions on data cleaning, including standardising employment-status labels, choosing median imputation for missing values, excluding Age and Location from the predictive model, and concluding that the model's performance was too weak for operational use. I also revised the recommendations to reflect the evidence from the analysis, resulting in the recommendation for a controlled pilot rather than deployment of the predictive model. I did not use AI to generate or fill in data values. Details in [`docs/ai-use-and-authorship.md`](docs/ai-use-and-authorship.md).
 
 ## 8. Limitations
 - The model has no predictive value on this data; the recommendation rests on that finding.
@@ -81,7 +80,8 @@ I used Claude to explain concepts, draft the analysis code and draft the written
 - A weak result is still a result: the honest recommendation was a controlled test, not a better algorithm.
 - Check data consistency before modelling; several fields contradicted each other.
 - Many group comparisons produce false leads unless you account for them.
-- [ADD one or two lessons in your own words.]
+- Data analysis is not only about finding patterns, but also about knowing when the data does not support a confident conclusion.
+- Business recommendations should be driven by evidence; when the data is uncertain, testing and validation are often more valuable than making assumptions.
 
 ## 10. Repository structure
 ```
